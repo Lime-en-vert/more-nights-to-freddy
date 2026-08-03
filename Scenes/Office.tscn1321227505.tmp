@@ -1,0 +1,1732 @@
+[gd_scene load_steps=126 format=3 uid="uid://boihyih2kigx8"]
+
+[ext_resource type="Script" uid="uid://b77ixek6mema0" path="res://Scripts/office.gd" id="1_4f0fq"]
+[ext_resource type="Texture2D" uid="uid://c25udrxfbk0vj" path="res://Assets/Image/Bureau.png" id="1_um8f5"]
+[ext_resource type="Script" uid="uid://bukb8jpiojcv5" path="res://Scripts/masque.gd" id="3_2uv6j"]
+[ext_resource type="Texture2D" uid="uid://cujnrhqv5ps07" path="res://Assets/Image/Elements/BoutonVentilateur.png" id="3_3oxl0"]
+[ext_resource type="Texture2D" uid="uid://c30ymbrt7siqf" path="res://Assets/Image/Masque.png" id="4_gnkyl"]
+[ext_resource type="PackedScene" uid="uid://c8xmousmckrvo" path="res://Components/BoutonBoop/BoutonBoop.tscn" id="4_wwh7d"]
+[ext_resource type="Texture2D" uid="uid://dj1cu5l6wd5t8" path="res://Assets/Image/Bureaueteint.png" id="4_xglko"]
+[ext_resource type="Script" uid="uid://d3cjmjurkbsf6" path="res://Scripts/ventillation.gd" id="5_i4f5g"]
+[ext_resource type="Texture2D" uid="uid://b6vkjmp4bv8s7" path="res://Assets/Image/masquepala.png" id="5_jptpv"]
+[ext_resource type="Texture2D" uid="uid://do6nx6ed8tmrg" path="res://Assets/Image/Ventilation.png" id="5_t43tj"]
+[ext_resource type="Texture2D" uid="uid://cxis5ong2com2" path="res://Assets/Image/Porte.png" id="6_0u7kn"]
+[ext_resource type="Texture2D" uid="uid://c6ssoacwxpwfn" path="res://Assets/Image/Elements/FenêtreEclairée.png" id="6_3g47s"]
+[ext_resource type="Script" uid="uid://bgosqtm7dvgxj" path="res://Scripts/porte.gd" id="6_gnkyl"]
+[ext_resource type="Texture2D" uid="uid://bxrv3gghd6fot" path="res://Assets/Image/Elements/Porte.Basse.png" id="8_chwbs"]
+[ext_resource type="Texture2D" uid="uid://xu77fd66wlmb" path="res://Assets/Image/Elements/Bouton.Venil.png" id="8_gldt3"]
+[ext_resource type="Texture2D" uid="uid://dmhaakgohyafg" path="res://Assets/Image/Elements/Bouton.Vert.png" id="8_t43tj"]
+[ext_resource type="AudioStream" uid="uid://cwwaagrmcfckj" path="res://Assets/Sound/fnaf-mask.mp3" id="8_x73e2"]
+[ext_resource type="Texture2D" uid="uid://d4kvehjm2qm7j" path="res://Assets/Image/masquevideéteint.png" id="9_0rali"]
+[ext_resource type="Texture2D" uid="uid://b8isjk3sntgng" path="res://Assets/Image/Elements/Porte.Haute.png" id="9_3g47s"]
+[ext_resource type="Texture2D" uid="uid://b44ia5u35em7m" path="res://Assets/Image/porteventil.ferme.png" id="9_gldt3"]
+[ext_resource type="Texture2D" uid="uid://cujjdqsxgv873" path="res://Assets/Image/Masqueeteint.png" id="10_8epp5"]
+[ext_resource type="Texture2D" uid="uid://lys8t6cx0que" path="res://Assets/Image/fléchemasque.png" id="15_6b8ke"]
+[ext_resource type="AudioStream" uid="uid://cq3pgv127lrfr" path="res://Assets/Sound/Door.mp3" id="16_jqx6n"]
+[ext_resource type="Texture2D" uid="uid://b6kcly2q70uc5" path="res://Assets/Image/Masqueport.png" id="16_k0xf6"]
+[ext_resource type="AudioStream" uid="uid://c6qq3f77ccqc4" path="res://Assets/Sound/BallastHumMedium2.ogg" id="19_7t7mw"]
+[ext_resource type="Texture2D" uid="uid://g2goannyjj2q" path="res://Assets/Image/Ventiléteint.png" id="19_iea77"]
+[ext_resource type="AudioStream" uid="uid://b8qvp6lre383b" path="res://Assets/Sound/Error.ogg" id="19_ynd11"]
+[ext_resource type="Texture2D" uid="uid://b3jfkbu7jrpc3" path="res://Assets/Image/Image Animatroniques/Golden Freddy/GoldenFreddyBureau.png" id="20_4ocyc"]
+[ext_resource type="Texture2D" uid="uid://b0rhj11p7dlvp" path="res://Assets/Image/Image Animatroniques/ClassicChica/ClassicChicaVentOffice.png" id="20_fcnem"]
+[ext_resource type="Texture2D" uid="uid://b3nfnucojr43x" path="res://Assets/Image/Image Cameras/Scène pricnipale.png" id="21_kp12w"]
+[ext_resource type="Texture2D" uid="uid://dgwlggks530ok" path="res://Assets/Image/Elements/LampeTorche.png" id="21_l100v"]
+[ext_resource type="PackedScene" uid="uid://bydotyhu8bbo8" path="res://Components/Flèche/Flèche.tscn" id="21_mdu65"]
+[ext_resource type="Texture2D" uid="uid://bsij8eynpn5pc" path="res://Assets/Image/Image Cameras/Pirate Cove.png" id="21_s8weu"]
+[ext_resource type="Texture2D" uid="uid://cx361fca3nl11" path="res://Assets/Image/CarteCamera.png" id="23_kp12w"]
+[ext_resource type="Texture2D" uid="uid://k8pic2vjix1s" path="res://Assets/Image/Image Cameras/Arcade.png" id="23_qxhf8"]
+[ext_resource type="Texture2D" uid="uid://dbij13ucijss4" path="res://Assets/Image/Image Animatroniques/ClassicFreddy/ClassicFreddyPorteOffice.png" id="25_1apny"]
+[ext_resource type="Texture2D" uid="uid://blbk5p0t88rru" path="res://Assets/Image/Image Cameras/Coin des prix.png" id="25_kuh34"]
+[ext_resource type="Texture2D" uid="uid://b0lsyn4m4fa6x" path="res://Assets/Image/Porteeteint.png" id="26_7nrq2"]
+[ext_resource type="Texture2D" uid="uid://hi7x1r5y6l72" path="res://Assets/Image/Image Cameras/salle a manger.png" id="26_qttup"]
+[ext_resource type="Texture2D" uid="uid://cqquwmuuojvby" path="res://Assets/Image/Image Animatroniques/ClassicBonnie/ClassicBonniePorteOffice.png" id="26_ynqft"]
+[ext_resource type="Texture2D" uid="uid://ccciee1g521vr" path="res://Assets/Image/Image Cameras/Chiottes.png" id="27_k1f78"]
+[ext_resource type="Texture2D" uid="uid://bfnyhxplaq3g0" path="res://Assets/Image/Image Cameras/PetS.png" id="28_18ujq"]
+[ext_resource type="Texture2D" uid="uid://cxyjpjltavfdd" path="res://Assets/Image/Image Cameras/Couloir ouest.png" id="29_xvfkt"]
+[ext_resource type="Texture2D" uid="uid://cup67xtequl10" path="res://Assets/Image/Image Cameras/Party Room Foxy.png" id="30_k7xmk"]
+[ext_resource type="Texture2D" uid="uid://cg3bxaov05e82" path="res://Assets/Image/Image Animatroniques/ClassicBonnie/ClassicBonnieScène.png" id="30_sadif"]
+[ext_resource type="Script" uid="uid://da4m4wxgvdjlf" path="res://Scripts/cameras.gd" id="31_fdopx"]
+[ext_resource type="Texture2D" uid="uid://cw3tywnhg0vqe" path="res://Assets/Image/Image Cameras/Party Room Chica.png" id="31_jqx6n"]
+[ext_resource type="Texture2D" uid="uid://cxspsg1wi4dwd" path="res://Assets/Image/Image Animatroniques/ClassicFreddy/ClassicFreddyScène.png" id="31_sc4iy"]
+[ext_resource type="Texture2D" uid="uid://c2av6xghs108j" path="res://Assets/Image/Image Animatroniques/ClassicChica/ClassicChicaScène.png" id="32_4xdtp"]
+[ext_resource type="Texture2D" uid="uid://cscf7anw4isla" path="res://Assets/Image/Image Cameras/Party Room Bonnie.png" id="32_356dr"]
+[ext_resource type="Texture2D" uid="uid://d2yr1qg1te4qd" path="res://Assets/Image/Image Cameras/Party Room Freddy.png" id="32_xvfkt"]
+[ext_resource type="Texture2D" uid="uid://bagqanhs6qer3" path="res://Assets/Image/Image Cameras/Placard.png" id="33_geo8f"]
+[ext_resource type="Texture2D" uid="uid://cpmibphh5ue8h" path="res://Assets/Image/Image Cameras/Entree.png" id="34_x73e2"]
+[ext_resource type="Texture2D" uid="uid://drbcb0iqfpmls" path="res://Assets/Image/Image Cameras/Capture d’écran 2026-05-30 152655.png" id="35_0uysk"]
+[ext_resource type="Texture2D" uid="uid://4ntus3gmuhnr" path="res://Assets/Image/Image Cameras/Couloir central.png" id="36_wela7"]
+[ext_resource type="Texture2D" uid="uid://dw1hefxkutcqk" path="res://Assets/Image/Image Animatroniques/ClassicBonnie/ClassicBonnieDiningArea.png" id="37_0ii5w"]
+[ext_resource type="Texture2D" uid="uid://b87smmob03wgm" path="res://Assets/Image/Image Cameras/Couloir Est.png" id="37_lkspl"]
+[ext_resource type="Texture2D" uid="uid://dobvy8uh4urre" path="res://Assets/Image/Image Cameras/Salle de repos.png" id="38_ubd2v"]
+[ext_resource type="Texture2D" uid="uid://bkd0x5ktkh14v" path="res://Assets/Image/Image Animatroniques/ClassicFreddy/ClassicFreddyDiningArea.png" id="38_yxbre"]
+[ext_resource type="Texture2D" uid="uid://dos7gue36ayvu" path="res://Assets/Image/Image Animatroniques/ClassicChica/ClassicChicaDiningArea.png" id="39_j3pc8"]
+[ext_resource type="Texture2D" uid="uid://dbx5eet6jkfl6" path="res://Assets/Image/Image Cameras/Cuisine.png" id="39_pf50n"]
+[ext_resource type="Texture2D" uid="uid://dkmrjgtj6s0bp" path="res://Assets/Image/Image Cameras/Conservation.png" id="40_fgvms"]
+[ext_resource type="Texture2D" uid="uid://bycnm3epn1a3i" path="res://Assets/Image/Image Cameras/Salle Moderne.png" id="41_a3fj2"]
+[ext_resource type="Texture2D" uid="uid://xe52ajc26438" path="res://Assets/Image/Image Cameras/PetS2.png" id="42_fgvms"]
+[ext_resource type="Texture2D" uid="uid://1hbk73j4wlmd" path="res://Assets/Image/Image Animatroniques/ClassicBonnie/ClassicBonnieChiottes.png" id="43_43717"]
+[ext_resource type="Texture2D" uid="uid://4q8v40r4nvlm" path="res://Assets/Image/Image Cameras/Garage.png" id="43_agfr3"]
+[ext_resource type="Texture2D" uid="uid://cwhu4tg0ye406" path="res://Assets/Image/Image Cameras/Stockage.png" id="44_ynd11"]
+[ext_resource type="Texture2D" uid="uid://db4snfck4u7po" path="res://Assets/Image/Image Cameras/Couloir secondaire.png" id="45_w1tof"]
+[ext_resource type="AudioStream" uid="uid://coe3mnubqfwrl" path="res://Assets/Sound/fnaf-4-flashlight-turned-on.mp3" id="46_geo8f"]
+[ext_resource type="Texture2D" uid="uid://dc156ucfci36d" path="res://Assets/Image/Image Animatroniques/ClassicFreddy/ClassicFreddyCouOuest.png" id="46_lgvpb"]
+[ext_resource type="Texture2D" uid="uid://cl3udoyg1nvhd" path="res://Assets/Image/Image Cameras/Generateru.png" id="46_vapov"]
+[ext_resource type="AudioStream" uid="uid://byedhwisa8mkw" path="res://Assets/Sound/fnaf-ambient-noise.mp3" id="46_x73e2"]
+[ext_resource type="Shader" uid="uid://drumea7783o7x" path="res://Assets/Image/Shader/static.gdshader" id="47_5e060"]
+[ext_resource type="Texture2D" uid="uid://cco8tk6ab2c3" path="res://Assets/Image/Image Animatroniques/ClassicBonnie/ClassicBonnieCouOuest.png" id="47_ovahd"]
+[ext_resource type="AudioStream" uid="uid://dfne37j1s1mnn" path="res://Assets/Sound/open_camera_sound.mp3" id="48_0uysk"]
+[ext_resource type="Texture2D" uid="uid://ck1loj6putgkn" path="res://Assets/Image/Image Cameras/Bureau Manager.png" id="49_7t7mw"]
+[ext_resource type="AudioStream" uid="uid://d0nho3q7mktm1" path="res://Assets/Sound/fnaf2-camera.mp3" id="50_lkspl"]
+[ext_resource type="Texture2D" uid="uid://so20fo7muh3p" path="res://Assets/Image/Image Cameras/Congelateur.png" id="52_rnlcq"]
+[ext_resource type="Texture2D" uid="uid://c3vka60k2px3e" path="res://Assets/Image/Image Animatroniques/Golden Freddy/Poster de GF4.png" id="52_uvr7s"]
+[ext_resource type="Texture2D" uid="uid://d0q38gdlni4xk" path="res://Assets/Image/Image Cameras/Vent 1.png" id="53_e0r1d"]
+[ext_resource type="Texture2D" uid="uid://dp6yvq4yccu87" path="res://Assets/Image/Image Animatroniques/ClassicBonnie/ClassicBonniePlacard.png" id="53_lgvpb"]
+[ext_resource type="Texture2D" uid="uid://c3aay3hhajstv" path="res://Assets/Image/Image Animatroniques/Golden Freddy/Poster de GF5.png" id="53_toxco"]
+[ext_resource type="Texture2D" uid="uid://c2wg4mv36rgq0" path="res://Assets/Image/Image Cameras/Vent 2.png" id="54_rdfes"]
+[ext_resource type="Texture2D" uid="uid://dro85k6pdbfvy" path="res://Assets/Image/Image Animatroniques/Golden Freddy/Poster de GF1.png" id="55_qyofo"]
+[ext_resource type="Texture2D" uid="uid://bhqc8hlfaaqtd" path="res://Assets/Image/Image Cameras/Vent 3.png" id="55_xglko"]
+[ext_resource type="Texture2D" uid="uid://b8tr7x7pkmdka" path="res://Assets/Image/Image Animatroniques/Golden Freddy/Poster de GF2.png.png" id="56_bkbw3"]
+[ext_resource type="Texture2D" uid="uid://bbwy41ruv8usj" path="res://Assets/Image/Image Cameras/Vent 4.png" id="56_bx0rc"]
+[ext_resource type="Texture2D" uid="uid://bvs5xknomi2gj" path="res://Assets/Image/Image Animatroniques/Golden Freddy/Poster de GF3.png" id="57_5e060"]
+[ext_resource type="Texture2D" uid="uid://dqwcsurf6b1pj" path="res://Assets/Image/Image Cameras/Vent 5.png" id="57_s8hj8"]
+[ext_resource type="Texture2D" uid="uid://csrqq8a624erg" path="res://Assets/Image/Image Cameras/Vent 6.png" id="59_agfr3"]
+[ext_resource type="Texture2D" uid="uid://yn0i2kv3b2de" path="res://Assets/Image/Image Animatroniques/ClassicBonnie/ClassicBonnieCousecondaire.png" id="61_ovahd"]
+[ext_resource type="Texture2D" uid="uid://dsoireq43ky3f" path="res://Assets/Image/Image Animatroniques/ClassicChica/ClassicChicaCouEst.png" id="63_cox1d"]
+[ext_resource type="Texture2D" uid="uid://jv6bvptw2sgh" path="res://Assets/Image/Image Animatroniques/ClassicFreddy/ClassicFreddyCouEst.png" id="64_wpaxr"]
+[ext_resource type="Texture2D" uid="uid://j155f8cahb3g" path="res://Assets/Image/Image Animatroniques/ClassicBonnie/ClassicBonnieCouCentral.png" id="66_brfwx"]
+[ext_resource type="Texture2D" uid="uid://dgehpxlbd4lub" path="res://Assets/Image/Image Animatroniques/ClassicChica/ClassicChicaCuisine.png" id="66_j3pc8"]
+[ext_resource type="AudioStream" uid="uid://dhebm2u5rto80" path="res://Assets/Sound/Buzz_Fan_Florescent2.ogg" id="66_ynd11"]
+[ext_resource type="Texture2D" uid="uid://b2rftkget6pnf" path="res://Assets/Image/Image Animatroniques/ClassicFreddy/ClassicFreddyCuisine.png" id="67_lig7l"]
+[ext_resource type="AudioStream" uid="uid://i6588u5p4fq1" path="res://Assets/Sound/fnaf-jumpscare-scream.mp3" id="67_w1tof"]
+[ext_resource type="Texture2D" uid="uid://cjixuvytsmy2u" path="res://Assets/Image/Image Animatroniques/ClassicFreddy/ClassicFreddyCouCentral.png" id="67_ynqft"]
+[ext_resource type="AudioStream" uid="uid://ccl20mpvb1f4n" path="res://Assets/Sound/fnaf-power-outage-gaming-sound-effect-(hd)-made-with-Voicemod.mp3" id="68_rdfes"]
+[ext_resource type="FontFile" uid="uid://4vp8csru15uh" path="res://Assets/fonts/FiveFontsatFreddy's-Regular.ttf" id="68_vapov"]
+[ext_resource type="Texture2D" uid="uid://v2oa57s5dess" path="res://Assets/Image/Elements/Jauge energie.png" id="69_7t7mw"]
+[ext_resource type="Texture2D" uid="uid://kwdto4f53grr" path="res://Assets/Image/Image Animatroniques/ClassicChica/ClassicChicaCongélateur.png" id="69_lig7l"]
+[ext_resource type="Texture2D" uid="uid://s8n1ppqw22iw" path="res://Assets/Image/Elements/energie restant.png" id="70_rnlcq"]
+[ext_resource type="Script" uid="uid://cluq6prs51gno" path="res://Scripts/batterie_générale.gd" id="71_e0r1d"]
+[ext_resource type="Texture2D" uid="uid://k4ytiojk6lc7" path="res://Assets/Image/Image Animatroniques/ClassicChica/ClassicChicaVent1.png" id="73_wpaxr"]
+[ext_resource type="Texture2D" uid="uid://brgxtete1lhcv" path="res://Assets/Image/Elements/jaugedebatterielampe.png" id="78_iea77"]
+[ext_resource type="Texture2D" uid="uid://de6g27fiy8fso" path="res://Assets/Image/Elements/batterielamperestane.png" id="79_7nrq2"]
+[ext_resource type="Script" uid="uid://d4bxut4phqb56" path="res://Scripts/batterie_lampetorche.gd" id="80_7nrq2"]
+[ext_resource type="Texture2D" uid="uid://cq6o0x12uu1rl" path="res://Assets/Image/Image Animatroniques/Golden Freddy/WGoldieJumpscare.png" id="85_sadif"]
+[ext_resource type="AudioStream" uid="uid://dwyg1bqvpdrn5" path="res://Assets/Sound/Chimes_2.mp3" id="89_bkbw3"]
+[ext_resource type="AudioStream" uid="uid://bqf0eoeue53f" path="res://Assets/Sound/Robotvoice.ogg" id="91_xchun"]
+[ext_resource type="AudioStream" uid="uid://cmte4ff7wunaa" path="res://Assets/Sound/Laugh_Giggle_Girl_1.ogg" id="92_gay7g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mdu65"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jptpv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2uv6j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6b8ke"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k0xf6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gnkyl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0d164"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t43tj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0u7kn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xchun"]
+shader = ExtResource("47_5e060")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.0
+shader_parameter/scanlines_width = 0.0
+shader_parameter/grille_opacity = 0.2510000119225
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = false
+shader_parameter/roll = true
+shader_parameter/roll_speed = 6.0
+shader_parameter/roll_size = 15.0
+shader_parameter/roll_variation = 1.59900007269262
+shader_parameter/distort_intensity = 0.02000000095
+shader_parameter/noise_opacity = 0.2950000140125
+shader_parameter/noise_speed = 4.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 4.7499999933364734e-08
+shader_parameter/brightness = 0.8
+shader_parameter/discolor = false
+shader_parameter/warp_amount = 2.84400013509
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.5
+shader_parameter/vignette_opacity = 0.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gay7g"]
+shader = ExtResource("47_5e060")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.0
+shader_parameter/scanlines_width = 0.0
+shader_parameter/grille_opacity = 0.0
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = false
+shader_parameter/roll = true
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 15.0
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.05
+shader_parameter/noise_opacity = 0.4
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 0.03
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 1.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k0xf6"]
+bg_color = Color(0.6, 0.6, 0.6, 0.27058825)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.15686275, 0.11764706, 0.11764706, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Office" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4f0fq")
+
+[node name="Bureau" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Image" type="TextureRect" parent="Bureau"]
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("1_um8f5")
+
+[node name="BoutonVentilateur" type="TextureRect" parent="Bureau"]
+layout_mode = 0
+offset_left = 939.0
+offset_top = 608.0
+offset_right = 979.0
+offset_bottom = 648.0
+texture = ExtResource("3_3oxl0")
+stretch_mode = 2
+
+[node name="Button" type="Button" parent="Bureau"]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 466.0
+offset_right = 838.0
+offset_bottom = 729.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mdu65")
+
+[node name="BoutonBoop" parent="Bureau" instance=ExtResource("4_wwh7d")]
+layout_mode = 1
+offset_left = 328.0
+offset_top = 564.0
+offset_right = 368.32
+offset_bottom = 595.0
+
+[node name="Bureaueteint" type="TextureRect" parent="Bureau"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("4_xglko")
+
+[node name="Masque" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_2uv6j")
+
+[node name="Image" type="TextureRect" parent="Masque"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("4_gnkyl")
+
+[node name="TextureRect" type="TextureRect" parent="Masque"]
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("5_jptpv")
+
+[node name="BoutonBoop" parent="Masque" instance=ExtResource("4_wwh7d")]
+layout_mode = 1
+offset_left = 310.0
+offset_top = 14.0
+offset_right = 375.32
+offset_bottom = 43.0
+
+[node name="BoutonBoop2" parent="Masque" instance=ExtResource("4_wwh7d")]
+layout_mode = 1
+offset_left = 1140.0
+offset_top = 580.0
+offset_right = 1184.32
+offset_bottom = 607.0
+
+[node name="masquevideeteint" type="TextureRect" parent="Masque"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("9_0rali")
+
+[node name="Masqueeteint" type="TextureRect" parent="Masque"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("10_8epp5")
+
+[node name="Button" type="Button" parent="Masque"]
+layout_mode = 0
+offset_left = 681.0
+offset_top = 420.0
+offset_right = 984.0
+offset_bottom = 671.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jptpv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2uv6j")
+
+[node name="Maskue_audio" type="AudioStreamPlayer2D" parent="Masque"]
+visible = false
+stream = ExtResource("8_x73e2")
+
+[node name="Ventillation" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_i4f5g")
+
+[node name="Image" type="TextureRect" parent="Ventillation"]
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("5_t43tj")
+
+[node name="Fenêtreeclairee" type="TextureRect" parent="Ventillation"]
+visible = false
+layout_mode = 0
+offset_left = 207.0
+offset_top = 265.0
+offset_right = 493.0
+offset_bottom = 536.0
+texture = ExtResource("6_3g47s")
+
+[node name="Boutonventil" type="TextureRect" parent="Ventillation"]
+visible = false
+layout_mode = 0
+offset_left = 704.0
+offset_top = 457.0
+offset_right = 753.0
+offset_bottom = 504.0
+texture = ExtResource("8_gldt3")
+
+[node name="ClassicChica" type="TextureRect" parent="Ventillation"]
+visible = false
+layout_mode = 0
+offset_left = 717.0
+offset_top = 525.0
+offset_right = 767.0
+offset_bottom = 566.0
+texture = ExtResource("20_fcnem")
+
+[node name="Button" type="Button" parent="Ventillation"]
+layout_mode = 0
+offset_left = 708.0
+offset_top = 459.0
+offset_right = 751.0
+offset_bottom = 503.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6b8ke")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k0xf6")
+
+[node name="Door_audio" type="AudioStreamPlayer2D" parent="Ventillation"]
+visible = false
+stream = ExtResource("16_jqx6n")
+
+[node name="Bouton_audio" type="AudioStreamPlayer2D" parent="Ventillation"]
+visible = false
+stream = ExtResource("19_ynd11")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Ventillation"]
+layout_mode = 0
+offset_left = 686.0
+offset_top = 502.0
+offset_right = 773.0
+offset_bottom = 591.0
+
+[node name="SubViewport" type="SubViewport" parent="Ventillation/SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(87, 89)
+render_target_update_mode = 0
+
+[node name="Portevent" type="TextureRect" parent="Ventillation/SubViewportContainer/SubViewport"]
+offset_left = 1.0
+offset_top = -58.0
+offset_right = 88.0
+offset_bottom = 31.0
+texture = ExtResource("9_gldt3")
+
+[node name="ventileteint" type="TextureRect" parent="Ventillation"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("19_iea77")
+
+[node name="GoldenFreddy" type="TextureRect" parent="Ventillation"]
+visible = false
+layout_mode = 0
+offset_left = 685.0
+offset_top = 388.0
+offset_right = 921.0
+offset_bottom = 696.0
+texture = ExtResource("20_4ocyc")
+
+[node name="Porte" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_gnkyl")
+
+[node name="Image" type="TextureRect" parent="Porte"]
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("6_0u7kn")
+
+[node name="ButtonLum" type="Button" parent="Porte"]
+layout_mode = 0
+offset_left = 502.0
+offset_top = 424.0
+offset_right = 575.0
+offset_bottom = 486.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gnkyl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0d164")
+
+[node name="BoutonVert" type="TextureRect" parent="Porte"]
+visible = false
+layout_mode = 0
+offset_left = 501.0
+offset_top = 354.0
+offset_right = 570.0
+offset_bottom = 422.0
+texture = ExtResource("8_t43tj")
+
+[node name="ButtonPorte" type="Button" parent="Porte"]
+layout_mode = 0
+offset_left = 501.0
+offset_top = 357.0
+offset_right = 569.0
+offset_bottom = 423.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t43tj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0u7kn")
+
+[node name="BoutonBoop" parent="Porte" instance=ExtResource("4_wwh7d")]
+layout_mode = 1
+offset_left = 369.0
+offset_top = 360.0
+offset_right = 394.32
+offset_bottom = 377.0
+
+[node name="ClassicFreddy" type="TextureRect" parent="Porte"]
+visible = false
+layout_mode = 0
+offset_left = 708.0
+offset_top = 350.0
+offset_right = 819.0
+offset_bottom = 586.0
+texture = ExtResource("25_1apny")
+
+[node name="ClassicBonnie" type="TextureRect" parent="Porte"]
+visible = false
+layout_mode = 0
+offset_left = 654.0
+offset_top = 349.0
+offset_right = 769.0
+offset_bottom = 595.0
+texture = ExtResource("26_ynqft")
+expand_mode = 1
+
+[node name="Light_audio" type="AudioStreamPlayer2D" parent="Porte"]
+stream = ExtResource("19_7t7mw")
+volume_db = 3.714
+parameters/looping = true
+
+[node name="Door_audio" type="AudioStreamPlayer2D" parent="Porte"]
+stream = ExtResource("16_jqx6n")
+
+[node name="Bouton_audio" type="AudioStreamPlayer2D" parent="Porte"]
+stream = ExtResource("19_ynd11")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Porte"]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 324.0
+offset_right = 832.0
+offset_bottom = 658.0
+
+[node name="SubViewport" type="SubViewport" parent="Porte/SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(184, 334)
+render_target_update_mode = 0
+
+[node name="Portehaute" type="TextureRect" parent="Porte/SubViewportContainer/SubViewport"]
+custom_minimum_size = Vector2(182, 174)
+offset_left = 1.0
+offset_top = -170.0
+offset_right = 183.0
+offset_bottom = 4.0
+texture = ExtResource("9_3g47s")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Portebasse" type="TextureRect" parent="Porte/SubViewportContainer/SubViewport"]
+custom_minimum_size = Vector2(174, 160)
+offset_left = 2.0
+offset_top = 334.0
+offset_right = 181.0
+offset_bottom = 494.0
+texture = ExtResource("8_chwbs")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="porteeteint" type="TextureRect" parent="Porte"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("26_7nrq2")
+
+[node name="Cameras" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("31_fdopx")
+
+[node name="Switchcam_audio" type="AudioStreamPlayer2D" parent="Cameras"]
+visible = false
+stream = ExtResource("50_lkspl")
+
+[node name="Camera1" type="TextureRect" parent="Cameras"]
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("21_kp12w")
+
+[node name="ClassicBonnie" type="TextureRect" parent="Cameras/Camera1"]
+layout_mode = 0
+offset_left = 679.0
+offset_top = 416.0
+offset_right = 911.0
+offset_bottom = 812.0
+texture = ExtResource("30_sadif")
+
+[node name="ClassicChica" type="TextureRect" parent="Cameras/Camera1"]
+layout_mode = 0
+offset_left = 918.0
+offset_top = 345.0
+offset_right = 1049.0
+offset_bottom = 560.0
+texture = ExtResource("32_4xdtp")
+
+[node name="ClassicFreddy" type="TextureRect" parent="Cameras/Camera1"]
+layout_mode = 0
+offset_left = 936.0
+offset_top = 386.0
+offset_right = 1135.0
+offset_bottom = 651.0
+texture = ExtResource("31_sc4iy")
+
+[node name="Camera2" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = -60.0
+offset_bottom = 40.0
+texture = ExtResource("23_qxhf8")
+
+[node name="Camera3" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("21_s8weu")
+
+[node name="Camera4" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = -60.0
+offset_bottom = 40.0
+texture = ExtResource("25_kuh34")
+
+[node name="Camera5" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = -60.0
+offset_bottom = 40.0
+texture = ExtResource("26_qttup")
+
+[node name="ClassicBonnie" type="TextureRect" parent="Cameras/Camera5"]
+visible = false
+layout_mode = 0
+offset_left = 469.0
+offset_top = 365.0
+offset_right = 523.0
+offset_bottom = 447.0
+texture = ExtResource("37_0ii5w")
+
+[node name="ClassicFreddy" type="TextureRect" parent="Cameras/Camera5"]
+visible = false
+layout_mode = 0
+offset_left = 897.0
+offset_top = 347.0
+offset_right = 923.0
+offset_bottom = 405.0
+texture = ExtResource("38_yxbre")
+
+[node name="ClassicChica" type="TextureRect" parent="Cameras/Camera5"]
+visible = false
+layout_mode = 0
+offset_left = 1088.0
+offset_top = 466.0
+offset_right = 1166.0
+offset_bottom = 593.0
+texture = ExtResource("39_j3pc8")
+
+[node name="Camera6" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = -60.0
+offset_bottom = 40.0
+texture = ExtResource("27_k1f78")
+
+[node name="ClassicBonnie" type="TextureRect" parent="Cameras/Camera6"]
+visible = false
+layout_mode = 0
+offset_left = 975.0
+offset_top = 290.0
+offset_right = 1082.0
+offset_bottom = 530.0
+texture = ExtResource("43_43717")
+
+[node name="Camera7" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_top = 1.0
+offset_right = 1580.0
+offset_bottom = 988.0
+texture = ExtResource("28_18ujq")
+
+[node name="Camera8" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("29_xvfkt")
+
+[node name="ClassicFreddy" type="TextureRect" parent="Cameras/Camera8"]
+visible = false
+layout_mode = 0
+offset_left = 1138.0
+offset_top = 280.0
+offset_right = 1195.0
+offset_bottom = 375.0
+texture = ExtResource("46_lgvpb")
+
+[node name="ClassicBonnie" type="TextureRect" parent="Cameras/Camera8"]
+visible = false
+layout_mode = 0
+offset_left = 699.0
+offset_top = 264.0
+offset_right = 1049.0
+offset_bottom = 814.0
+texture = ExtResource("47_ovahd")
+
+[node name="Camera9" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("30_k7xmk")
+
+[node name="Camera10" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("31_jqx6n")
+
+[node name="Camera11" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("32_xvfkt")
+
+[node name="Camera12" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("32_356dr")
+
+[node name="Camera13" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("33_geo8f")
+
+[node name="ClassicBonnie" type="TextureRect" parent="Cameras/Camera13"]
+visible = false
+layout_mode = 0
+offset_left = 461.0
+offset_top = 3.0
+offset_right = 947.0
+offset_bottom = 788.0
+texture = ExtResource("53_lgvpb")
+
+[node name="Camera14" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("34_x73e2")
+
+[node name="Camera15" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("40_fgvms")
+
+[node name="Camera16" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("41_a3fj2")
+
+[node name="Camera17" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("42_fgvms")
+
+[node name="Camera18" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("43_agfr3")
+
+[node name="Camera19" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("44_ynd11")
+
+[node name="Camera20" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("45_w1tof")
+
+[node name="ClassicBonnie" type="TextureRect" parent="Cameras/Camera20"]
+visible = false
+layout_mode = 0
+offset_left = 676.0
+offset_top = 330.0
+offset_right = 804.0
+offset_bottom = 585.0
+texture = ExtResource("61_ovahd")
+
+[node name="Camera21" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("46_vapov")
+
+[node name="Camera22" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("36_wela7")
+
+[node name="PosterdeGF1" type="TextureRect" parent="Cameras/Camera22"]
+visible = false
+layout_mode = 0
+offset_left = 1013.0
+offset_top = 365.0
+offset_right = 1479.0
+offset_bottom = 842.0
+texture = ExtResource("52_uvr7s")
+
+[node name="PosterdeGF2" type="TextureRect" parent="Cameras/Camera22"]
+visible = false
+layout_mode = 0
+offset_left = 855.0
+offset_top = 332.0
+offset_right = 939.0
+offset_bottom = 457.0
+texture = ExtResource("53_toxco")
+expand_mode = 1
+
+[node name="ClassicBonnie" type="TextureRect" parent="Cameras/Camera22"]
+visible = false
+layout_mode = 0
+offset_left = 723.0
+offset_top = 359.0
+offset_right = 763.0
+offset_bottom = 441.0
+texture = ExtResource("66_brfwx")
+
+[node name="ClassicFreddy" type="TextureRect" parent="Cameras/Camera22"]
+visible = false
+layout_mode = 0
+offset_left = 761.0
+offset_top = 364.0
+offset_right = 802.0
+offset_bottom = 476.0
+texture = ExtResource("67_ynqft")
+
+[node name="Camera23" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -94.0
+offset_top = 2.0
+offset_right = 1586.0
+offset_bottom = 989.0
+texture = ExtResource("37_lkspl")
+
+[node name="PosterdeGF5" type="TextureRect" parent="Cameras/Camera23"]
+visible = false
+layout_mode = 0
+offset_left = 501.0
+offset_top = 352.0
+offset_right = 602.0
+offset_bottom = 492.0
+texture = ExtResource("55_qyofo")
+
+[node name="PosterdeGF4" type="TextureRect" parent="Cameras/Camera23"]
+visible = false
+layout_mode = 0
+offset_left = 688.0
+offset_top = 340.0
+offset_right = 728.0
+offset_bottom = 401.0
+texture = ExtResource("56_bkbw3")
+
+[node name="PosterdeGF3" type="TextureRect" parent="Cameras/Camera23"]
+visible = false
+layout_mode = 0
+offset_left = 826.0
+offset_top = 342.0
+offset_right = 876.0
+offset_bottom = 418.0
+texture = ExtResource("57_5e060")
+expand_mode = 1
+
+[node name="ClassicChica" type="TextureRect" parent="Cameras/Camera23"]
+visible = false
+layout_mode = 0
+offset_left = 809.0
+offset_top = 353.0
+offset_right = 871.0
+offset_bottom = 472.0
+texture = ExtResource("63_cox1d")
+
+[node name="ClassicFreddy" type="TextureRect" parent="Cameras/Camera23"]
+visible = false
+layout_mode = 0
+offset_left = 741.0
+offset_top = 353.0
+offset_right = 789.0
+offset_bottom = 454.0
+texture = ExtResource("64_wpaxr")
+
+[node name="Camera24" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("49_7t7mw")
+
+[node name="Camera25" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("38_ubd2v")
+
+[node name="Camera26" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("39_pf50n")
+
+[node name="ClassicChica" type="TextureRect" parent="Cameras/Camera26"]
+visible = false
+layout_mode = 0
+offset_left = 736.0
+offset_top = 301.0
+offset_right = 796.0
+offset_bottom = 407.0
+texture = ExtResource("66_j3pc8")
+
+[node name="ClassicFreddy" type="TextureRect" parent="Cameras/Camera26"]
+visible = false
+layout_mode = 0
+offset_left = 1001.00006
+offset_top = 300.00003
+offset_right = 1060.0
+offset_bottom = 456.00003
+rotation = 0.058534533
+texture = ExtResource("67_lig7l")
+
+[node name="Camera27" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("52_rnlcq")
+
+[node name="ClassicChica" type="TextureRect" parent="Cameras/Camera27"]
+visible = false
+layout_mode = 0
+offset_left = 586.0
+offset_top = 365.0
+offset_right = 836.0
+offset_bottom = 733.0
+texture = ExtResource("69_lig7l")
+
+[node name="Camera28" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("53_e0r1d")
+
+[node name="ClassicChica" type="TextureRect" parent="Cameras/Camera28"]
+visible = false
+layout_mode = 0
+offset_left = 554.0
+offset_top = 246.0
+offset_right = 913.0
+offset_bottom = 957.0
+texture = ExtResource("73_wpaxr")
+
+[node name="Camera29" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("54_rdfes")
+
+[node name="Camera30" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("55_xglko")
+
+[node name="Camera31" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("56_bx0rc")
+
+[node name="Camera32" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("57_s8hj8")
+
+[node name="Camera33" type="TextureRect" parent="Cameras"]
+visible = false
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("59_agfr3")
+
+[node name="CamBrouille" type="TextureRect" parent="Cameras"]
+material = SubResource("ShaderMaterial_xchun")
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("35_0uysk")
+
+[node name="Map" type="TextureRect" parent="Cameras"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 543.0
+offset_right = 713.0
+offset_bottom = 979.0
+texture = ExtResource("23_kp12w")
+
+[node name="Cam 1" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 210.0
+offset_right = 397.0
+offset_bottom = 235.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 1"
+
+[node name="Cam 2" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 285.0
+offset_right = 467.0
+offset_bottom = 310.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 2"
+
+[node name="Cam 3" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 286.0
+offset_right = 294.0
+offset_bottom = 311.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 3"
+
+[node name="Cam 4" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 292.0
+offset_right = 504.0
+offset_bottom = 317.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.49803922, 0.003921569, 0.84313726, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 4"
+
+[node name="Cam 5" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 184.0
+offset_right = 373.0
+offset_bottom = 209.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 5"
+
+[node name="Cam 6" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 194.0
+offset_top = 155.0
+offset_right = 232.0
+offset_bottom = 180.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 6"
+
+[node name="Cam 7" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 276.0
+offset_right = 383.0
+offset_bottom = 301.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 7"
+
+[node name="Cam 8" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 226.0
+offset_right = 195.0
+offset_bottom = 251.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 8"
+
+[node name="Cam 9" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 260.0
+offset_right = 177.0
+offset_bottom = 285.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 9"
+
+[node name="Cam 10" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 257.0
+offset_right = 243.0
+offset_bottom = 281.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 10"
+
+[node name="Cam 11" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 352.0
+offset_right = 174.0
+offset_bottom = 376.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 11"
+
+[node name="Cam 12" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 381.0
+offset_right = 248.0
+offset_bottom = 405.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 12"
+
+[node name="Cam 13" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 242.0
+offset_right = 137.0
+offset_bottom = 266.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 13"
+
+[node name="Cam 14" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 55.0
+offset_right = 223.0
+offset_bottom = 80.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 14"
+
+[node name="Cam 15" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 367.0
+offset_right = 315.0
+offset_bottom = 391.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 15"
+
+[node name="Cam 16" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 116.0
+offset_right = 164.0
+offset_bottom = 140.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 16"
+
+[node name="Cam 17" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 49.0
+offset_right = 76.0
+offset_bottom = 73.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 17"
+
+[node name="Cam 18" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 225.0
+offset_right = 66.0
+offset_bottom = 249.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 18"
+
+[node name="Cam 19" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 306.0
+offset_right = 84.0
+offset_bottom = 330.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 19"
+
+[node name="Cam 20" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 314.0
+offset_right = 142.0
+offset_bottom = 336.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 20"
+
+[node name="Cam 21" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 361.0
+offset_right = 383.0
+offset_bottom = 385.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 21"
+
+[node name="Cam 22" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 333.0
+offset_right = 454.0
+offset_bottom = 357.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 22"
+
+[node name="Cam 23" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 543.0
+offset_top = 233.0
+offset_right = 587.0
+offset_bottom = 257.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 23"
+
+[node name="Cam 24" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 364.0
+offset_right = 644.0
+offset_bottom = 388.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 24"
+
+[node name="Cam 25" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 294.0
+offset_right = 636.0
+offset_bottom = 318.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 25"
+
+[node name="Cam 26" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 192.0
+offset_right = 554.0
+offset_bottom = 216.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.5921569, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 26"
+
+[node name="Cam 27" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 588.0
+offset_top = 236.0
+offset_right = 632.0
+offset_bottom = 260.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.49637616, 0.0029377085, 0.843556, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 27"
+
+[node name="Cam 28" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 366.0
+offset_right = 579.0
+offset_bottom = 390.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0, 0.37254903, 0.16470589, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 1"
+
+[node name="Cam 29" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 537.0
+offset_top = 114.0
+offset_right = 581.0
+offset_bottom = 138.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0, 0.37267375, 0.16633648, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 2"
+
+[node name="Cam 30" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 618.0
+offset_top = 88.0
+offset_right = 662.0
+offset_bottom = 112.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0, 0.37254903, 0.16470589, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 3"
+
+[node name="Cam 31" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 366.0
+offset_right = 89.0
+offset_bottom = 390.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0, 0.37254903, 0.16470589, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 4"
+
+[node name="Cam 32" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 347.0
+offset_right = 692.0
+offset_bottom = 371.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0, 0.37254903, 0.16470589, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 5"
+
+[node name="Cam 33" type="Button" parent="Cameras/Map"]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 259.0
+offset_right = 554.0
+offset_bottom = 283.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0, 0.37254903, 0.16470589, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 10
+text = "Cam 6"
+
+[node name="Static Camera" type="CanvasLayer" parent="Cameras"]
+visible = false
+
+[node name="Statictexture" type="ColorRect" parent="Cameras/Static Camera"]
+visible = false
+material = SubResource("ShaderMaterial_gay7g")
+offset_right = 1477.0
+offset_bottom = 988.0
+
+[node name="Masqueport" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1483.0
+offset_bottom = 989.0
+texture = ExtResource("16_k0xf6")
+expand_mode = 1
+
+[node name="Fléche Masque" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 265.0
+offset_top = 809.0
+offset_right = 1203.0
+offset_bottom = 946.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_k0xf6")
+
+[node name="Image" type="TextureRect" parent="Fléche Masque"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -295.0
+offset_top = -62.0
+offset_right = 305.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_6b8ke")
+expand_mode = 1
+
+[node name="FlècheGauche" parent="." instance=ExtResource("21_mdu65")]
+layout_mode = 1
+offset_left = 18.0
+offset_top = 21.0
+offset_right = -21.480011
+offset_bottom = -38.0
+flip = false
+
+[node name="FlècheDroite" parent="." instance=ExtResource("21_mdu65")]
+layout_mode = 1
+offset_left = 1352.0
+offset_top = 21.0
+offset_right = 1312.52
+offset_bottom = -38.0
+
+[node name="LampeTorche" type="PointLight2D" parent="."]
+visible = false
+position = Vector2(693, 480)
+scale = Vector2(1.2521739, 1.2347826)
+energy = 3.0
+texture = ExtResource("21_l100v")
+height = 9.0
+
+[node name="Batterie Générale" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 37.0
+offset_right = 639.0
+offset_bottom = 127.0
+value = 100.0
+texture_under = ExtResource("69_7t7mw")
+texture_progress = ExtResource("70_rnlcq")
+texture_progress_offset = Vector2(8, 9)
+tint_progress = Color(0, 0.52156866, 0, 1)
+script = ExtResource("71_e0r1d")
+
+[node name="Batterievide_audio" type="AudioStreamPlayer2D" parent="Batterie Générale"]
+process_mode = 3
+position = Vector2(-139, -37)
+stream = ExtResource("68_rdfes")
+max_distance = 4096.0
+
+[node name="Label" type="Label" parent="Batterie Générale"]
+layout_mode = 0
+offset_top = -31.0
+offset_right = 218.0
+offset_bottom = 12.0
+theme_override_constants/shadow_offset_x = 16
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("68_vapov")
+theme_override_font_sizes/font_size = 20
+text = "Batterie Générale"
+
+[node name="BatterieLampetorche" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 164.0
+offset_right = 246.0
+offset_bottom = 254.0
+value = 100.0
+texture_under = ExtResource("78_iea77")
+texture_progress = ExtResource("79_7nrq2")
+texture_progress_offset = Vector2(9.5, 10)
+script = ExtResource("80_7nrq2")
+
+[node name="Label" type="Label" parent="BatterieLampetorche"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -33.0
+offset_right = 217.0
+offset_bottom = 10.0
+theme_override_constants/shadow_offset_x = 16
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("68_vapov")
+theme_override_font_sizes/font_size = 20
+text = "Lampe Torche"
+
+[node name="Interface" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Nuit" type="Label" parent="Interface"]
+layout_mode = 0
+offset_left = 1191.0
+offset_top = 109.0
+offset_right = 1386.0
+offset_bottom = 216.0
+theme_override_constants/line_spacing = -32
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_x = 16
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("68_vapov")
+theme_override_font_sizes/font_size = 50
+text = "Nuit X"
+
+[node name="Heure" type="Label" parent="Interface"]
+layout_mode = 0
+offset_left = 1186.0
+offset_top = 26.0
+offset_right = 1381.0
+offset_bottom = 133.0
+theme_override_constants/line_spacing = -32
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_x = 16
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("68_vapov")
+theme_override_font_sizes/font_size = 50
+text = "12 AM"
+
+[node name="O2" type="Label" parent="Interface"]
+layout_mode = 0
+offset_left = 1172.0
+offset_top = 867.0
+offset_right = 1447.0
+offset_bottom = 1075.0
+theme_override_constants/line_spacing = -30
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_x = 16
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("68_vapov")
+theme_override_font_sizes/font_size = 30
+text = "Oxygène
+        100 %"
+
+[node name="température" type="Label" parent="Interface"]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 795.0
+offset_right = 1400.0
+offset_bottom = 1003.0
+theme_override_constants/line_spacing = -30
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_x = 16
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 14
+theme_override_fonts/font = ExtResource("68_vapov")
+theme_override_font_sizes/font_size = 30
+text = "Température
+                     20°C"
+
+[node name="EndNight" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1483.0
+offset_bottom = 987.0
+
+[node name="fonddefinnuit" type="ColorRect" parent="EndNight"]
+visible = false
+layout_mode = 0
+offset_right = 1483.0
+offset_bottom = 987.0
+color = Color(0, 0, 0, 1)
+
+[node name="Heure de Fin" type="Label" parent="EndNight"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -106.5
+offset_right = 125.0
+offset_bottom = 106.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("68_vapov")
+theme_override_font_sizes/font_size = 100
+text = "6 AM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GAmeovers" type="Label" parent="EndNight"]
+visible = false
+layout_mode = 0
+offset_left = 277.0
+offset_top = 387.0
+offset_right = 1277.0
+offset_bottom = 600.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("68_vapov")
+theme_override_font_sizes/font_size = 100
+text = "Vous avez péri ?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GoldenFreddyJumpscare" type="TextureRect" parent="EndNight"]
+visible = false
+layout_mode = 0
+offset_left = -294.0
+offset_top = -283.0
+offset_right = 1722.9014
+offset_bottom = 1428.1362
+rotation = -0.043820933
+scale = Vector2(1.1420242, 1.1460919)
+texture = ExtResource("85_sadif")
+stretch_mode = 4
+
+[node name="Audio" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Fan" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("66_ynd11")
+parameters/looping = true
+
+[node name="LampeTorch" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("46_geo8f")
+pitch_scale = 0.89
+
+[node name="Cam" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("48_0uysk")
+
+[node name="Ambience" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("46_x73e2")
+volume_db = -8.357
+autoplay = true
+parameters/looping = true
+
+[node name="Sonnerie" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("89_bkbw3")
+
+[node name="GoldenFreddyJumpscare" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("67_w1tof")
+volume_db = 3.0
+pitch_scale = 0.33
+
+[node name="GoldenFreddyVoice" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("91_xchun")
+
+[node name="GFLaugh" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("92_gay7g")
+volume_db = -6.5

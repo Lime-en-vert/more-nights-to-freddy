@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://bydotyhu8bbo8"]
+
+[ext_resource type="Script" uid="uid://b86hhyx1jvldw" path="res://Components/Flèche/flèche.gd" id="1_4skdq"]
+[ext_resource type="Texture2D" uid="uid://ce2bvkhql37g3" path="res://Assets/Image/fléche.png" id="1_od8yf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4skdq"]
+bg_color = Color(0.30323282, 0.30323282, 0.30323282, 0.52156866)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4798724, 0.44023722, 0.3940862, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Flèche" type="Control"]
+layout_mode = 3
+anchor_right = 0.101
+anchor_bottom = 1.0
+offset_right = -0.480011
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4skdq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_od8yf")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_4skdq")

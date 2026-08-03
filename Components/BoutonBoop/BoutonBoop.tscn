@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://c8xmousmckrvo"]
+
+[ext_resource type="Script" uid="uid://b46jxerkodqos" path="res://Components/BoutonBoop/bouton_boop.gd" id="1_hjk87"]
+[ext_resource type="AudioStream" uid="uid://ct7od0duxfenp" path="res://Assets/Sound/boop-freddys-nose.mp3" id="2_257cm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r322f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0i1y3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hjk87"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_257cm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hn8x3"]
+
+[node name="BoutonBoop" type="Control"]
+layout_mode = 3
+anchor_right = 0.017
+anchor_bottom = 0.025
+offset_right = -0.16000175
+offset_bottom = 0.32499886
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hjk87")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r322f")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0i1y3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hjk87")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_257cm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hn8x3")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_257cm")

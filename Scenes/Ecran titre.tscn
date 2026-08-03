@@ -1,0 +1,365 @@
+[gd_scene load_steps=18 format=3 uid="uid://bt67t7c7oud6g"]
+
+[ext_resource type="Script" uid="uid://hm2t1byimwxx" path="res://Scripts/ecran_titre.gd" id="1_0alic"]
+[ext_resource type="Texture2D" uid="uid://c4pjx703e2qvy" path="res://Assets/Image/Ecrantitre.png" id="1_8qjgi"]
+[ext_resource type="Texture2D" uid="uid://bn7wwemymyg4s" path="res://Assets/Image/FreddyEcrantitre.png" id="2_a6wjb"]
+[ext_resource type="Texture2D" uid="uid://bb5sf6rwww2pw" path="res://Assets/Image/Ventilationpété.png" id="2_n7cd0"]
+[ext_resource type="FontFile" uid="uid://4vp8csru15uh" path="res://Assets/fonts/FiveFontsatFreddy's-Regular.ttf" id="2_rt236"]
+[ext_resource type="Texture2D" uid="uid://bo1q51u43fd0c" path="res://Assets/Image/BonnieEcrantitre.png" id="3_0alic"]
+[ext_resource type="Texture2D" uid="uid://ci0bluxl0ewva" path="res://Assets/Image/Détail.png" id="3_qyr53"]
+[ext_resource type="Script" uid="uid://ba76led0wh6eq" path="res://Scripts/nouvelle_partie.gd" id="4_7ahdq"]
+[ext_resource type="Texture2D" uid="uid://ccqblgdyp7bn5" path="res://Assets/Image/ChicaEcrantitre.png" id="4_awkta"]
+[ext_resource type="Shader" uid="uid://drumea7783o7x" path="res://Assets/Image/Shader/static.gdshader" id="5_6qahc"]
+[ext_resource type="Texture2D" uid="uid://otoupjcav5yc" path="res://Assets/Image/FoxyEcrantitre.png" id="5_civ0n"]
+[ext_resource type="Texture2D" uid="uid://vjws46medoox" path="res://Assets/Image/GoldenFreddyEcrantitre.png" id="6_3cfyd"]
+[ext_resource type="Script" uid="uid://8mwvr5uptib2" path="res://Scripts/continuer.gd" id="6_cn5xg"]
+[ext_resource type="AudioStream" uid="uid://c0bc6dmacuwq4" path="res://Assets/Sound/krasnoshchok-scary-horror-dark-music-404418.mp3" id="6_vvbmj"]
+[ext_resource type="AudioStream" uid="uid://6u4xosj101dm" path="res://Assets/Sound/Blip3.mp3" id="7_vvbmj"]
+[ext_resource type="Script" uid="uid://6lson0r3fvej" path="res://Scripts/transition.gd" id="8_py3a6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7qd60"]
+shader = ExtResource("5_6qahc")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.0
+shader_parameter/scanlines_width = 0.0
+shader_parameter/grille_opacity = 0.0
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = false
+shader_parameter/roll = false
+shader_parameter/roll_speed = 2.0
+shader_parameter/roll_size = 13.44400063859
+shader_parameter/roll_variation = 1.00000004424012
+shader_parameter/distort_intensity = 0.0
+shader_parameter/noise_opacity = 0.0
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.070000003325
+shader_parameter/aberration = 4.7499999933364734e-08
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = false
+shader_parameter/warp_amount = 0.1350000064125
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.514000024415
+
+[node name="EcranTitre" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0alic")
+
+[node name="Ecrantitre" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1680, 987)
+layout_mode = 0
+offset_left = -100.0
+offset_right = 1580.0
+offset_bottom = 987.0
+texture = ExtResource("1_8qjgi")
+
+[node name="ventilpete" type="TextureRect" parent="Ecrantitre"]
+visible = false
+layout_mode = 0
+offset_left = 1301.0
+offset_top = 594.0
+offset_right = 1348.0
+offset_bottom = 636.0
+texture = ExtResource("2_n7cd0")
+expand_mode = 1
+
+[node name="Détail" type="TextureRect" parent="Ecrantitre/ventilpete"]
+visible = false
+modulate = Color(0.27387288, 0.2738727, 0.27387273, 1)
+layout_mode = 0
+offset_left = -877.0
+offset_top = -19.0
+offset_right = -865.0
+offset_bottom = -12.0
+texture = ExtResource("3_qyr53")
+expand_mode = 1
+
+[node name="Freddy" type="TextureRect" parent="Ecrantitre"]
+visible = false
+layout_mode = 0
+offset_left = 726.0
+offset_top = 521.0
+offset_right = 791.0
+offset_bottom = 639.0
+texture = ExtResource("2_a6wjb")
+
+[node name="Bonnie" type="TextureRect" parent="Ecrantitre"]
+visible = false
+layout_mode = 0
+offset_left = 578.0
+offset_top = 518.0
+offset_right = 668.0
+offset_bottom = 661.0
+texture = ExtResource("3_0alic")
+
+[node name="Chica" type="TextureRect" parent="Ecrantitre"]
+visible = false
+layout_mode = 0
+offset_left = 1021.0
+offset_top = 524.0
+offset_right = 1104.0
+offset_bottom = 651.0
+texture = ExtResource("4_awkta")
+
+[node name="Foxy" type="TextureRect" parent="Ecrantitre"]
+visible = false
+layout_mode = 0
+offset_left = 1150.0
+offset_top = 525.0
+offset_right = 1220.0
+offset_bottom = 663.0
+texture = ExtResource("5_civ0n")
+expand_mode = 1
+
+[node name="Golden Freddy" type="TextureRect" parent="Ecrantitre"]
+visible = false
+layout_mode = 0
+offset_left = 847.0
+offset_top = 556.0
+offset_right = 920.0
+offset_bottom = 642.0
+texture = ExtResource("6_3cfyd")
+
+[node name="Titre" type="Label" parent="Ecrantitre"]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 26.0
+offset_right = 1043.0
+offset_bottom = 544.0
+theme_override_constants/line_spacing = -23
+theme_override_constants/paragraph_spacing = 2
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 9
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 44
+text = "More
+Nights
+To
+
+and
+"
+
+[node name="???" type="Label" parent="Ecrantitre/Titre"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 361.0
+offset_right = 119.0
+offset_bottom = 461.0
+theme_override_colors/font_color = Color(0.16651416, 0.8475746, 0, 1)
+theme_override_constants/paragraph_spacing = 2
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 44
+text = "???"
+
+[node name="Freddy\'s" type="Label" parent="Ecrantitre/Titre"]
+layout_mode = 0
+offset_top = 217.0
+offset_right = 242.0
+offset_bottom = 311.0
+theme_override_colors/font_color = Color(0.30014822, 0.2106165, 0.101581134, 1)
+theme_override_constants/paragraph_spacing = 2
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 44
+text = "Freddy's"
+
+[node name="Static Camera" type="CanvasLayer" parent="Ecrantitre"]
+
+[node name="Statictexture" type="ColorRect" parent="Ecrantitre/Static Camera"]
+material = SubResource("ShaderMaterial_7qd60")
+offset_left = -4.0
+offset_top = -2.0
+offset_right = 1473.0
+offset_bottom = 986.0
+mouse_filter = 2
+
+[node name="Nouvelle Partie" type="Button" parent="Ecrantitre"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 509.0
+offset_right = 366.0
+offset_bottom = 579.0
+theme_override_constants/outline_size = 11
+theme_override_constants/h_separation = 10
+theme_override_constants/icon_max_width = 6
+theme_override_constants/align_to_largest_stylebox = 0
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 21
+text = "Nouvelle Partie"
+icon_alignment = 1
+script = ExtResource("4_7ahdq")
+
+[node name="Continuer" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 44.0
+offset_top = 598.0
+offset_right = 266.0
+offset_bottom = 668.0
+theme_override_constants/outline_size = 11
+theme_override_constants/h_separation = 10
+theme_override_constants/icon_max_width = 6
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 21
+icon_alignment = 1
+script = ExtResource("6_cn5xg")
+
+[node name="ContinueNuit" type="Label" parent="Continuer"]
+layout_mode = 0
+offset_right = 222.0
+offset_bottom = 70.0
+theme_override_constants/line_spacing = 2
+theme_override_constants/paragraph_spacing = 2
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 13
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 21
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Meuble" type="Label" parent="Continuer"]
+layout_mode = 0
+offset_right = 221.0
+offset_bottom = 70.0
+theme_override_constants/line_spacing = 2
+theme_override_constants/paragraph_spacing = 2
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 21
+text = "Continuer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nuit 7" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 46.0
+offset_top = 690.0
+offset_right = 268.0
+offset_bottom = 760.0
+theme_override_constants/outline_size = 11
+theme_override_constants/h_separation = 10
+theme_override_constants/icon_max_width = 6
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 21
+
+[node name="Meuble" type="Label" parent="Nuit 7"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 221.0
+offset_bottom = 70.0
+theme_override_constants/line_spacing = 2
+theme_override_constants/paragraph_spacing = 2
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 21
+text = "Nuit Personalisée"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Extra" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 47.0
+offset_top = 778.0
+offset_right = 269.0
+offset_bottom = 848.0
+theme_override_constants/outline_size = 11
+theme_override_constants/h_separation = 10
+theme_override_constants/icon_max_width = 6
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 21
+
+[node name="Meuble" type="Label" parent="Extra"]
+layout_mode = 0
+offset_right = 221.0
+offset_bottom = 70.0
+theme_override_constants/line_spacing = 2
+theme_override_constants/paragraph_spacing = 2
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 21
+text = "Extra"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Audio" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Musique" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("6_vvbmj")
+autoplay = true
+
+[node name="Bouton" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("7_vvbmj")
+
+[node name="Transition" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_py3a6")
+
+[node name="Fond" type="ColorRect" parent="Transition"]
+layout_mode = 0
+offset_right = 1490.0
+offset_bottom = 991.0
+color = Color(0, 0, 0, 1)
+
+[node name="Message" type="Label" parent="Transition/Fond"]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 457.0
+offset_right = 1047.0
+offset_bottom = 539.0
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 38
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Heure" type="Label" parent="Transition/Fond"]
+layout_mode = 0
+offset_right = 1485.0
+offset_bottom = 988.0
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 38
+text = "12:00 AM
+
+
+-M.A.
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nuit" type="Label" parent="Transition/Fond"]
+layout_mode = 0
+offset_left = 680.0
+offset_top = 369.0
+offset_right = 804.0
+offset_bottom = 451.0
+theme_override_fonts/font = ExtResource("2_rt236")
+theme_override_font_sizes/font_size = 38
+text = "Nuit X"
