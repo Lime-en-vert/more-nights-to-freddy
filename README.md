@@ -2,7 +2,7 @@
 
 Un jeu de survie nocturne réalisé avec **Godot**, inspiré par l'univers de *Five Nights at Freddy's*.
 
-Ce projet réalisé afin de s'entraîner à la programmation de jeux vidéo : organisation de scènes, interactions, interface, gestion des ressources, sons et logique de jeu.
+Ce projet réalisé afin de m'entraîner à la programmation de jeux vidéo : organisation de scènes, interactions, interface, gestion des ressources, sons et logique de jeu.
 
 > Ce projet de fan est non officiel et n'est pas affilié à Five Nights at Freddy's ni à ses ayants droit.
 
@@ -10,9 +10,8 @@ Ce projet réalisé afin de s'entraîner à la programmation de jeux vidéo : or
 
 Le joueur doit survivre à une nuit dans un bureau en surveillant les animatroniques et en gérant ses ressources. Il peut notamment :
 
-- parcourir les différentes zones du bureau ;
 - consulter les caméras de surveillance ;
-- utiliser la lampe torche et le ventilateur ;
+- utiliser la lampe torche, le ventilateur ainsi que les portes du bureau ;
 - surveiller la batterie et progresser au fil des nuits.
 
 Les graphismes du jeu ont été produits à partir de captures d'écran prises dans **Minecraft**, puis intégrés et utilisés dans Godot.
@@ -42,6 +41,13 @@ Le projet cible Godot `4.6` avec le moteur de rendu **Forward Plus**.
 - `Assets/` : images, polices et sons.
 - `Components/` : composants réutilisables de l'interface.
 - `Screenshots/` : aperçus du jeu.
+
+## Credits
+
+Visuel:
+**Minecraft** par Mojang Studio
+Le mod **FNaF Managment Wanted** par OVDR Studios
+Toute la **Structure** a été créé par moi-même
 
 ## Licence
 
