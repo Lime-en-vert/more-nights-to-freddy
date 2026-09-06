@@ -45,9 +45,9 @@ Le projet cible Godot `4.6` avec le moteur de rendu **Forward Plus**.
 ## Credits
 
 Visuel:
-**Minecraft** par Mojang Studio
-Le mod **FNaF Managment Wanted** par OVDR Studios
-Toute la **Structure** a été créé par moi-même
+- **Minecraft** par Mojang Studio
+- Le mod **FNaF Managment Wanted** par OVDR Studios
+- Toute la **Structure** a été créé par moi-même
 
 ## Licence
 
